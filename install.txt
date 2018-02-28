@@ -1,0 +1,20 @@
+sudo apt-get update
+sudo apt-get install git
+sudo apt-get install vim
+git clone https://github.com/dat1010/configFiles
+mv ./configFiles/.vimrc ~/
+mv ./configFiles/.bash_aliases ~/
+
+
+
+
+#install elixir
+mix local.hex
+wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb && sudo dpkg -i erlang-solutions_1.0_all.deb
+sudo apt-get update
+sudo apt-get install esl-erlang
+sudo apt-get install elixir
+#install phoenix
+mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez
+
+#install postgres
