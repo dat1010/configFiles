@@ -7,12 +7,16 @@ endif
 call plug#begin()
 	Plug 'scrooloose/nerdtree'
 	Plug 'elixir-editors/vim-elixir'
+	Plug 'vim-ruby/vim-ruby'
+	Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 map <C-n> :NERDTreeToggle<CR>
 let NerdTreeShowLineNumbers=1
 let NERDTreeQuitOnOpen = 1
 autocmd FileType nerdtree setlocal relativenumber
+" NerdTree set color 
+hi Directory guifg=#FF0000 ctermfg=cyan
 
 " Search down into subfolders and allows tab-completion
  set path+=**
@@ -23,3 +27,5 @@ autocmd FileType nerdtree setlocal relativenumber
 
  " This should disable automatic commetns
 set formatoptions-=cro
+colors desert
+
