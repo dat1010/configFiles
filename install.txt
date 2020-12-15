@@ -1,6 +1,7 @@
 sudo apt-get update
 sudo apt-get install git
 sudo apt-get install vim
+sudo apt-get install curl
 git clone https://github.com/dat1010/configFiles
 mv ./configFiles/.vimrc ~/
 mv ./configFiles/.bash_aliases ~/
